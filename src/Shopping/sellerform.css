@@ -1,0 +1,48 @@
+.form-main{
+    height: 100%;
+}
+
+.seller-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    height: 672px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .seller-form label {
+    margin-bottom: 10px;
+  }
+  
+  .seller-form input[type="text"],
+  .seller-form input[type="email"],
+  .seller-form input[type="file"],
+  .seller-form input[type="number"]  {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+
+    border: 1px solid #ccc;
+  }
+  
+  .seller-form button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .seller-form button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+   

@@ -1,0 +1,38 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: rgb(177, 177, 177); */
+    height: 650px;
+}
+
+.stepperr{
+    flex: 4;
+    justify-content: center;
+    align-items: center;
+    background: rgb(18, 112, 219);
+    display: flex;
+   border: 1px solid black;
+   border-radius: 5%;
+   margin-left: 80px;
+}
+
+.circle{
+    border: 1px solid black;
+    /* background: #ffffff; */
+}
+
+.small-box{
+   width: 350px;
+   height: 450px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.step-page{
+    flex: 8;
+    justify-content: center;
+    align-items: center;
+}

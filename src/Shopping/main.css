@@ -1,0 +1,12 @@
+.delivery img {
+    width: 100%;
+}
+
+.slider1 img {
+    width: 100%;
+    height: '450px';
+    color: '#fff';
+    line-height: '160px';
+    align-items: 'center';
+    background: '#364d79';
+}

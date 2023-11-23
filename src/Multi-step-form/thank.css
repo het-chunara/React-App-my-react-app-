@@ -1,0 +1,22 @@
+.thank-you-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    background-color: #007bff;
+    overflow: hidden;
+  }
+  
+  .thank-you-content {
+    text-align: center;
+    color: #fff;
+    transform: translateY(-100%);
+    animation: slide-in 1s ease-out forwards;
+  }
+  
+  @keyframes slide-in {
+    to {
+      transform: translateY(0);
+    }
+  }
+  

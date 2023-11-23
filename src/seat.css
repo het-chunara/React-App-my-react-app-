@@ -1,0 +1,229 @@
+
+.seatpage{
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 10%;
+/* max-width: 1024px; */
+}
+
+.movie-booking-app {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+   
+  }
+  
+  /* Screen */
+  .screen {
+    background-color: #333;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Seat Container */
+  .seats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #fd4c4c; */
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    flex-wrap: wrap;
+  }
+  
+  label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    cursor: pointer;
+  }
+
+  .disabled-seat {
+    background-color: red;
+    pointer-events: none;
+  }
+  
+  
+
+  input[type="checkbox"] {
+     display: none; 
+     background-color: #fd4c4c; 
+  }
+  
+  span.seat {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #777;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    background-color:#616161;
+  }
+
+  @media only screen and (max-width: 425px) {
+   
+  }
+  
+  input[type="checkbox"]:checked + span.seat {
+    background-color: #34a853; 
+    color: white;
+    border-color: #34a853; 
+  }
+  input[type="checkbox"]:disabled + span.seat {
+    background-color: #000000; 
+    color: white;
+    border-color: #fd4c4c;
+  }
+  /* Booking Info */
+  .booking-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgb(240, 93, 93);
+    box-shadow: 5px 5px 10px rgba(236, 6, 6, 0.3); 
+    height: 100%;
+    min-height: 320px;
+    width: 300px;
+    border-radius: 7%;
+
+  }
+  
+  button {
+    background-color: #fd4c4c;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #770000;
+  }
+  .join-seat{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   /* text-align: center; */
+  }
+
+  .join-seat ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .join-seat li{
+    margin-right: 35px
+  }
+  
+  .white{
+    color: aliceblue;
+    /* background: #6d6a6a; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+
+  .post-number{
+    background-color: #494646;
+    padding: 10px;
+  }
+
+  .api-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    column-gap: 10px;
+    border: 1px solid rgb(9, 127, 206);
+    box-shadow: 5px 5px 10px rgba(77, 252, 208, 0.3); 
+    height: 100%;
+    min-height: 320px;
+    max-width: 400px;
+    border-radius: 7%;
+    flex-wrap:wrap ;
+    padding: 10px 10px 10px 10px;
+    height: 100%;
+  }
+
+  .deco{
+    text-align: center;
+    color: #fd4c4c;
+  }
+
+  .loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    border: 3px solid;
+    border-color: #FFF #FFF transparent transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after,
+  .loader::before {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 3px solid;
+    border-color: transparent transparent #FF3D00 #FF3D00;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: rotationBack 0.5s linear infinite;
+    transform-origin: center center;
+  }
+  .loader::before {
+    width: 32px;
+    height: 32px;
+    border-color: #FFF #FFF transparent transparent;
+    animation: rotation 1.5s linear infinite;
+  }
+      
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+  @keyframes rotationBack {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+      

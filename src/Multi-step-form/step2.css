@@ -1,0 +1,39 @@
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+    /* background-color: #f0f0f0; */
+  }
+  
+  .card {
+    background: #c9c5c5;
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #9c9595;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center;
+    height: 200px;
+  }
+
+  .png img{
+    height: 50px;
+  }
+  
+  .card:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .selected {
+    background-color: #007bff;
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+  .step2-button{
+    position: absolute;
+    bottom: 50px;
+  }
+ 

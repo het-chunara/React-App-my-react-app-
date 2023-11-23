@@ -1,0 +1,66 @@
+.checkbox-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .checkbox-item {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    /* flex-direction: row; */
+  }
+
+  .step3-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .step3-h{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; 
+    gap: 20px;
+  }
+
+  .step3-h p{
+   justify-content: flex-end;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  h2 {
+    margin: 0;
+  }
+  
+  label {
+    cursor: pointer;
+  }
+  
+  .checkbox-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Style checked checkboxes */
+  input[type="checkbox"]:checked + label {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  /* Style border when checked */
+  input[type="checkbox"]:checked + label::before {
+    border: 2px solid #007bff;
+  }
+  
+  .step3-buttton{
+    position: absolute;
+    bottom: 50px;
+  }
